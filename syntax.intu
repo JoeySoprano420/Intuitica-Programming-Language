@@ -1,0 +1,3 @@
+run_intensively: model_weather(cloud_data, wind_patterns)
+trim: fetch_minimal(sensor_data)
+balance: build_application(frontend, backend)
