@@ -2171,3 +2171,27 @@ The modular structure of Intuitica enables developers to extend its functionalit
 
 By breaking down complex systems into manageable, reusable modules, Intuitica fosters an environment where functionality can be extended without burdening developers with unnecessary complexity. This highly flexible framework makes it suitable for rapid prototyping, real-time applications, and performance-critical tasks.
 
+   1.	.int – Primary Intuitica Code File
+	•	Used for main application code and projects.
+	2.	.intmod – Intuitica Module File
+	•	For reusable libraries, modules, and packages.
+	3.	.intconf – Configuration File
+	•	Stores settings, preferences, or environmental configurations for Intuitica applications.
+	4.	.intpkg – Package File
+	•	For bundled Intuitica projects or libraries, including dependencies and metadata.
+	5.	.intnode – Node Chain Definition
+	•	Specifies modular node chains and interconnections for dynamic execution.
+	6.	.inthash – Hashword File
+	•	Stores hashword definitions, mappings, or activation triggers.
+	7.	.intstruct – Structure Definitions
+	•	For complex data type definitions (e.g., structs, classes).
+	8.	.intenv – Environment File
+	•	Defines runtime environment variables and system-level dependencies.
+	9.	.intaot – AOT Compiled File
+	•	The Ahead-of-Time compiled output for standalone execution.
+	10.	.intjit – JIT Optimized File
+	•	Stores Just-in-Time optimized code for runtime improvements.
+	11.	.intgfx – Graphics/Visuals Module
+	•	For Intuitica-driven graphical components, like GUIs or animations.
+	12.	.intai – AI/ML Model File
+	•	Dedicated to AI/ML models and logic created using Intuitica.
