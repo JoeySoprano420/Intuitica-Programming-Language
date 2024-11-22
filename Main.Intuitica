@@ -20,3 +20,27 @@ optimize_and_run:
 # Use dynamic variable management and real-time system optimizations
 set real_time_optimal_speed: true
 dynamic_scaling_enabled: true
+
+# Initialize the list and add items
+initialize_list: List list = new List()
+
+# Add various data types to the list
+add_to_list(list, "string_item")
+add_to_list(list, 42)
+add_to_list(list, new Person("John Doe", 30))
+
+# Process data from the list
+process_data: foreach item in list
+    if type_of(item) == "string"
+        print("Processing string: ", item)
+    else if type_of(item) == "Person"
+        print("Processing Person: ", item.name, item.age)
+
+# Run dynamically optimized function
+optimize_and_run: 
+    dynamic_function_call
+
+# Use dynamic variable management and real-time system optimizations
+set real_time_optimal_speed: true
+dynamic_scaling_enabled: true
+
