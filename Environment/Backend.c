@@ -128,3 +128,40 @@ int main() {
 
     return 0;
 }
+
+#include <stdio.h>
+#include <stdlib.h>
+#include <string.h>
+
+// Struct to represent a memory block
+typedef struct {
+    void* memory;
+    size_t size;
+} MemoryBlock;
+
+// Simple garbage collection to free unused memory
+void free_memory(MemoryBlock* block) {
+    if (block != NULL) {
+        free(block->memory);
+        printf("Memory freed\n");
+    }
+}
+
+// Function to allocate memory
+MemoryBlock* allocate_memory(size_t size) {
+    MemoryBlock* new_block = (MemoryBlock*)malloc(sizeof(MemoryBlock));
+    if (new_block != NULL) {
+        new_block->memory = malloc(size);
+        new_block->size = size;
+        printf("Memory allocated: %zu bytes\n", size);
+    }
+    return new_block;
+}
+
+// Example usage
+int main() {
+    MemoryBlock* block = allocate_memory(1024);  // Allocate 1 KB
+    free_memory(block);  // Free allocated memory
+    return 0;
+}
+
